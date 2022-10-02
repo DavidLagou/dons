@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css?family=Cormorant+Garamond&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Tenali+Ramakrishna&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap");
+
+// Variable colors
+$navColor: #ffff;
+$companyBrown: #a3806a;
+$companyGreen:#25392D;
+$companyPink:#a6806a;
+
+$headingFont: "Cormorant Garamond", serif;
+$quoteTxt: "Philosopher", sans-serif;
+$paragraphTxt:'Tenali Ramakrishna', sans-serif;
+
+
+body {
+    background-color: #f0efef;
+    overflow-x: hidden;
+}
+
+
+@import "nav";
+@import "hero";
+@import "sections";
+@import "menu";
+@import "about";
+@import "footer";
+
+

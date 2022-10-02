@@ -1,0 +1,56 @@
+.nav-bar {
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 10px; }
+
+.nav-bar li {
+  list-style-type: none;
+  padding: 10px; }
+  .nav-bar li a {
+    text-decoration: none;
+    color: #ffff; }
+  .nav-bar li a:hover {
+    color: red; }
+
+.heroImg {
+  background: transparent url("../img/r1.jpg") 0 0 no-repeat fixed;
+  text-align: center;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  position: absolute;
+  z-index: -1000; }
+
+.heroImg .logo img {
+  height: 500px; }
+.heroImg .hero-quote {
+  color: white; }
+  .heroImg .hero-quote .reservationCTA {
+    text-decoration: none;
+    color: #a3806a;
+    background-color: transparent;
+    border: 2px solid #a3806a;
+    padding: 10px;
+    font-size: 1.1em; }
+  .heroImg .hero-quote .reservationCTA:hover {
+    padding: 10px 30px;
+    transition: all 1s ease;
+    background-color: white;
+    cursor: pointer; }
+
+@media screen and (max-width: 650px) {
+  h1 {
+    color: red; }
+
+  .heroImg .logo {
+    margin-top: 100px; }
+    .heroImg .logo img {
+      text-align: center;
+      height: 300px; } }
+.sectionImg img {
+  width: 30%; }
+
+.featured-content {
+  margin-top: 300px; }

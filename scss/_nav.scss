@@ -1,0 +1,95 @@
+/********** NAVBAR CLASSES **********/
+nav.nav-bar {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    min-width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #F0EFEF;
+    -webkit-box-shadow: 0 8px 6px -6px #F0EFEF;
+	   -moz-box-shadow: 0 8px 6px -6px #F0EFEF;
+	        box-shadow: 0 8px 6px -6px #F0EFEF;
+}
+
+.nav-bar-collapse {
+    list-style-type: none;
+    padding: 0;
+    visibility: visible;
+    background-color: #F0EFEF;
+    a{
+        padding-bottom: 10px;
+    }
+
+}
+
+
+.nav-home {
+    height: 100%;
+}
+
+.nav-btn {
+    min-width: 120px;
+}
+
+.nav-btn a {
+    display: block;
+    // padding: 5px -20px 10px 0px;
+    color: #555;
+    text-align: center;
+    text-decoration: none;
+    margin-right: -20px;;
+}
+.nav-btn a:hover{
+    color: $companyPink;
+    border-bottom: 1px solid $companyPink;
+} 
+
+.menu-toggle {
+    margin-left: auto;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.toggle-btn {
+    height: 35px;
+    align-self: center;
+}
+
+@media only screen and (min-width: 700px) {
+
+    .nav-bar-collapse {
+        display: flex !important;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .menu-toggle {
+        visibility: hidden;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    /* show also width of 100%*/
+    .nav-bar-collapse {
+        position: absolute;
+        top: 22px;
+        right: 0px;
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+    }
+
+    .nav-bar-collapse .nav-btn {
+        min-width: 100%;
+    }
+
+    .menu-toggle {
+        visibility: visible;
+    }
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donatello</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/global.css">
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!-- Animation css -->
+    <link rel="stylesheet" href="dist/aos.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <!-- <span class="nav-btn nav-home"><a>MDIA 1472</a></span> -->
+            <ul id="collapseMenu" class="nav-bar-collapse">
+                <li class="nav-btn"><a href="index.html">Home</a></li>
+                <li class="nav-btn"><a href="menu.html">Menu</a></li>
+                <li class="nav-btn"><a href="about.html">About</a></li>
+                <li class="nav-btn nav-curr"><a href="contact.html">Contact</a></li>
+                <li class="nav-btn"><a href="reservation.html">Reservation</a></li>
+            </ul>
+            <div class="menu-toggle" onclick="toggleMenu();">
+                <img class="toggle-btn" alt="hamburger Menu" src="./img/hamburger.svg">
+            </div>
+        </nav>
+
+        <div class="rsv_imgheader">
+            <div class="headertxt">
+                <h1> RESERVATION</h1>
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <main>
+
+        <section id="reservationSection">
+            <h2> Its time to plan your next event.</h2>
+            <p> You can also call at (604) - 622 - 8288 or email us at
+                donatellos@gmail.com. <Br>Reservations become available at restaurant opening at 11am. </p>
+            <div class="form">
+                <form>
+
+
+                    <label for="firstName"></label>
+                    <input id="name" type="name" placeholder="First Name" class="">
+
+
+                    <label for="lastName"></label>
+                    <input id="name" type="name" placeholder="Last Name" class="">
+
+
+                    <label for="phone"></label>
+                    <input id="name" type="email" placeholder="Phone number" class="">
+
+                    <label for="email"></label>
+                    <input id="name" type="email" placeholder="Email" class=""><br>
+
+
+                    <div class="formSelection">
+                        <label for="time-slot">Time Slot</label>
+                        <select id="Time">
+                            <option value="AB">12:00</option>
+                            <option value="BC">12:30</option>
+                            <option value="MB">13:00</option>
+                            <option value="NL">13:30</option>
+                            <option value="NS">14:00</option>
+                            <option value="ON">14:30</option>
+                            <option value="PE">15:00</option>
+                            <option value="QC">15:30</option>
+                            <option value="SK">16:00</option>
+                            <option value="NT">16:30</option>
+                            <option value="NU">17:00</option>
+                            <option value="YT">17:30</option>
+                        </select>
+
+                        <label for="Party">Party Size</label>
+                        <select id="state">
+                            <option value="AB">1</option>
+                            <option value="BC">2</option>
+                            <option value="MB">3</option>
+                            <option value="NB">4</option>
+                            <option value="NL">5</option>
+                            <option value="NS">6</option>
+                            <option value="ON">7</option>
+                            <option value="PE">8</option>
+                            <option value="QC">9</option>
+                            <option value="SK">10</option>
+                        </select><br>
+                    </div>
+                    <span class="gratuity">*Please note that all large parties with 8 or more guests will be
+                        given a 20% gratuity.</span><br>
+
+
+                    <button type="submit" class="">FIND A TABLE</button>
+
+                </form>
+
+            </div>
+
+
+
+        </section>
+
+
+    </main>
+
+    <footer>
+        <div class="socials">
+            <h1>Follow Us On :</h1>
+            <div class="socials-icons">
+                <a href="#"> <i class="fa fa-facebook-square" style="font-size:48px;"></i></a>
+                <a href="#"> <i class="fa fa-instagram" style="font-size:48px;"></i></a>
+                <a href="#"><i class="fa fa-twitter-square" style="font-size:48px;"></i> </a>
+            </div>
+
+
+        </div>
+        <div class="contact">
+            <h1> Contact Us :</h1>
+            <ul>
+                <li> <span class="contactInfoHeader"> Hours</span> : Sunday-Thursday: 11am-12am
+                    Friday/Saturday: 11am-2am and
+                    Holidays: 11am-5pm </li>
+                <li> <span class="contactInfoHeader">Location:</span> 803 Thurlow St, Vancouver BC V6E 1W1</li>
+                <li> <span class="contactInfoHeader">Email:</span> donatellos@gmail.com </li>
+                <li><span class="contactInfoHeader">Press:</span> donatellos.press@gmail.com</li>
+                <li><span class="contactInfoHeader"> Group dining:</span> donatellos.events@gmail.com</li>
+            </ul>
+        </div>
+        <div class="newsletter">
+            <h1> Join Us:</h1>
+            <input type="text" placeholder="e-mail">
+            <button> SUBSCRIBE</button>
+
+
+
+        </div>
+    </footer>
+    <script src="js/navbar_toggle.js"></script>
+
+    <script src="dist/aos.js"></script>
+    <script>
+        AOS.init({
+            easing: 'ease-in-out-sine',
+            once: true
+        });
+    </script>
+</body>
+
+</html>

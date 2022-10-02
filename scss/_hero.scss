@@ -1,0 +1,94 @@
+
+.heroImg {
+     background: transparent url("../img/r1.jpg") 0 0 no-repeat fixed;
+    text-align: center;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    width: 100%;
+    .logo {
+        img {
+            height: 500px;
+        }
+    }
+
+    .hero-quote {
+        color: white;
+        .reservationCTA {
+            // margin-top: 120px;
+            text-decoration: none;
+            color: white;
+            background-color: transparent;
+            border: 2px solid white;
+            padding: 10px;
+            font-size: 1.5em;
+        }
+
+        .reservationCTA:hover {
+            padding: 10px 30px;
+            transition: all 1s ease;
+            background-color: white;
+            color: $companyPink;
+            cursor: pointer;
+        }
+    }
+}
+
+
+
+
+.rsv_imgheader,.contact_imgheader {
+    
+    background: url(../img/r-hg.jpg)0 0 no-repeat fixed;
+    background-position: bottom;
+    text-align: center;
+    background-size: cover;
+    height: 40vh;
+    width: 100%;
+    margin-bottom: -10px;
+    .headertxt{
+        h1{
+            margin: 0;
+            padding-top: 100px;
+            color: white;
+            font-size: 4em;
+        }
+    }
+}
+
+
+.about_imgheader{
+    background: url(../img/AboutBG.jpg)300px 0 no-repeat fixed;
+    background-position: bottom;
+    text-align: center;
+    background-size: cover;
+    height: 50vh;
+    width: 100%;
+    margin-bottom: -10px;
+    .headertxt{
+        h1{
+            margin: 0;
+            padding-top: 100px;
+            color: white;
+            font-size: 4em;
+        }
+    }
+}
+
+
+// IPHONE MEDIA QUERY WIDTH
+@media screen and (max-width: 650px) {
+    
+    .heroImg {
+        .logo {
+            padding-top: 100px;
+            img {
+                
+                text-align: center;
+                height: 300px;
+                // position: absolute;
+
+            }
+        }
+    }
+}
