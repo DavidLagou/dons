@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donatello</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/global.css">
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!-- Animation css -->
+    <link rel="stylesheet" href="dist/aos.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <!-- <span class="nav-btn nav-home"><a>MDIA 1472</a></span> -->
+            <ul id="collapseMenu" class="nav-bar-collapse">
+                <li class="nav-btn"><a href="index.html">Home</a></li>
+                <li class="nav-btn"><a href="menu.html">Menu</a></li>
+                <li class="nav-btn"><a href="about.html">About</a></li>
+                <li class="nav-btn nav-curr"><a href="contact.html">Contact</a></li>
+                <li class="nav-btn"><a href="reservation.html">Reservation</a></li>
+            </ul>
+            <div class="menu-toggle" onclick="toggleMenu();">
+                <img class="toggle-btn" alt="hamburger Menu"src="./img/hamburger.svg">         
+            </div>
+        </nav>
+        <div class="about_imgheader">
+            <div class="headertxt">
+                <h1> ABOUT</h1>
+            </div>
+
+        </div>
+
+
+    </header>
+
+
+
+    <main>
+        <section id="aboutSection">
+            <h2> Off the crowded street of Robson
+            </h2>
+            <p> You will find a spiraling marble stone walkway leading to our modern Italian cuisine. Through the
+                entrance is a wide elegant dining room to the right; and to the left is a modern, yet tasteful, lounge.
+                Donatello’s holds several records in the city of Vancouver: it received its first award from the
+                Vancouver Post shortly after opening back in 2008 and is the only five-star, Vancouver based restaurant
+                that has maintained its high-end status since opening. </p>
+        </section>
+
+
+
+        <section id="aboutChefs">
+            <div class="chef1">
+                <img src="./img/chef2.jpg" alt="">
+                <h2> Frank Donatello </h2>
+                <p> Donatello's head chef, Philip Rossi, had begun his passion of cooking in Florence, Italy 1991. In
+                    his years of experience and expertise he has mastered the skill of preparation, detailed cooking and
+                    the art of plate presentation. Philip Rossi has won Donatello's several awards as well as won top
+                    chef of the Lower Mainland in 2017, 2018 and 2019
+
+                </p>
+            </div>
+            <div class="chef2">
+                <img src="./img/chef1.jpg" alt="">
+                <h2> Donatello's Team
+                </h2>
+                <p> The Donatello staff are all detail oriented individuals who strive in a fast paced environment. With
+                    warm welcoming smiles, attentiveness and appreciation for feedback; our staff make a great team. We
+                    encourage our staff to stay diligent while working but to also interact with others and have a great
+                    time. 1he environment of Donatello's shows the staff e njoy being here as much as the guests do.
+
+                </p>
+
+            </div>
+            <div class="chef3">
+                <img src="./img/chef3.jpg" alt="">
+                <h2> Chef Philip Rossi
+                </h2>
+                <p> The owner/creator of Donatello's, moved to British Columbia back in 1989 to start his own
+                    restaurant. When Frank Donatello opened Donatello's back in 2009 his idea was to bring authentic
+                    Italian fine dining to Vancouver and allow Canadians to have a real taste of true authentic Italian
+                    cuisine.
+
+                </p>
+
+            </div>
+
+
+        </section>
+
+        <div class="bigcontainer">
+            <h2> Look at how far we've came</h2>
+
+            <div class="photoshop">
+                <div class="original">
+                    <img src="img/about_old.jpg" alt="">
+                </div>
+
+                <div class="corrected">
+                    <img src="img/about_new.jpg" alt="">
+
+                </div>
+            </div>
+            <p> Use your mouse to hover over the images to see the growth and development of Donatello from 1990 - 2020
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="socials">
+            <h1>Follow Us On :</h1>
+            <div class="socials-icons">
+                <a href="#"> <i class="fa fa-facebook-square" style="font-size:48px;"></i></a>
+                <a href="#"> <i class="fa fa-instagram" style="font-size:48px;"></i></a>
+                <a href="#"><i class="fa fa-twitter-square" style="font-size:48px;"></i> </a>
+            </div>
+
+
+        </div>
+        <div class="contact">
+            <h1> Contact Us :</h1>
+            <ul>
+                <li> <span class="contactInfoHeader"> Hours</span> : Sunday-Thursday: 11am-12am
+                    Friday/Saturday: 11am-2am and
+                    Holidays: 11am-5pm </li>
+                <li> <span class="contactInfoHeader">Location:</span> 803 Thurlow St, Vancouver BC V6E 1W1</li>
+                <li> <span class="contactInfoHeader">Email:</span> donatellos@gmail.com </li>
+                <li><span class="contactInfoHeader">Press:</span> donatellos.press@gmail.com</li>
+                <li><span class="contactInfoHeader"> Group dining:</span> donatellos.events@gmail.com</li>
+            </ul>
+        </div>
+        <div class="newsletter">
+            <h1> Join Us:</h1>
+            <input type="text" placeholder="e-mail">
+            <button> SUBSCRIBE</button>
+
+
+
+        </div>
+    </footer>
+
+    <script src="dist/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/navbar_toggle.js"></script>
+
+    <script src="./js/reveal.js"></script>
+    <script>
+        AOS.init({
+            easing: 'ease-in-out-sine',
+            once: true
+        });
+    </script>
+</body>
+
+</html>

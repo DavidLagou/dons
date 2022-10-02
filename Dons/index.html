@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donatello</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/global.css">
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!-- Animation css -->
+    <link rel="stylesheet" href="dist/aos.css">
+
+</head>
+
+<body>
+    <header>
+        
+        <nav class="nav-bar">
+            <!-- <span class="nav-btn nav-home"><a>MDIA 1472</a></span> -->
+            <ul id="collapseMenu" class="nav-bar-collapse">
+                <li class="nav-btn"><a href="index.html">Home</a></li>
+                <li class="nav-btn"><a href="menu.html">Menu</a></li>
+                <li class="nav-btn"><a href="about.html">About</a></li>
+                <li class="nav-btn nav-curr"><a href="contact.html">Contact</a></li>
+                <li class="nav-btn"><a href="reservation.html">Reservation</a></li>
+            </ul>        
+            <div class="menu-toggle" onclick="toggleMenu();">                
+                <img class="toggle-btn" alt="hamburger menu"src="./img/hamburger.svg">                
+            </div>
+        </nav>
+        <div class="heroImg">
+            <div class="logo">
+                <img src="./img/logoFinal.gif" alt="">
+                <!-- This is something that is going to need to change -->
+            </div>
+
+            <div class="hero-quote">
+                <a href="reservation.html" class="reservationCTA"> Reserve A Table</a>
+            </div>
+
+
+        </div>
+
+        
+    </header>
+
+    <main>
+        <h2 id="mainHomeQuote"> Delicous Italian Cuzine since 1997 </h2>
+
+        <section class="featured-content" data-aos="fade-right">
+
+            <div class="sectionImg fONE ">
+                <img src="./img/food1.png" alt="">
+            </div>
+
+            <div class="sectionTxt fTWO" data-rellax-speed="-1">
+                <h2> TRUE ITALIAN FINE DINING
+                </h2>
+                <p> Donatello’s greatest goal was to bring true authentic Italian cuisine to Vancouver, British
+                    Columbia. In the process of creating this goal, many unique and original dishes had been created
+                    throughout the menu in pastas, pizzas, appetizers and more. Our pastas are made with rich Mario
+                    Batali Alfredo sauce or creamy Gia Russa Alla Vodka sauce. We really want our guests to taste a bit
+                    of Italy with every bite.</p>
+                <a href="menu.html">VIEW MENU</a>
+            </div>
+
+        </section>
+
+        <section class="featured-content reverse " data-aos="fade-left">
+
+            <div class="sectionImg fONE">
+                <img src="./img/food2.png" alt="">
+            </div>
+
+            <div class="sectionTxt FTWO">
+                <h2> UNIQUE DISHES CREATED IN HOUSE</h2>
+                <p> For all of our new guests, we recommend asking your server what their favourite dish is; but
+                    ultimately you cannot go wrong with any dish from Donatellos. With fresh organic vegetables from
+                    local farms across British Columbia, pizza dough hand stretched and created in house, and cooked to
+                    perfection in our fire-stone oven. Donatello’s has various food alternatives for those who have
+                    allergies and dietary restrictions so that the whole party can find a dish that they enjoy.</p>
+                <a href="reservation.html"> Book a Reservation</a>
+            </div>
+
+        </section>
+
+        <section class="featured-content " data-aos="fade-right">
+
+            <div class="sectionImg fONE">
+                <img src="./img/food3.png" alt="">
+            </div>
+
+            <div class="sectionTxt fTWO">
+                <h2> RICH AND CRISP WINES</h2>
+                <p>The main asset of Donatello’s wine is its true force. All wines in houses are located all across
+                    Italy. Our most popular wines are located just outside the Barolo town limits, on the road to
+                    Monforte. These wines are all produced in Barolo, Langhe Nebbiolo, Langhe Freisa, Dolcetto d'Alba,
+                    Barbera d'Alba, Rosae. Donatello’s. Leaving a rich and savory sense in your mouth with various
+                    bodies to choose from. Strong aromas from our older wines and juicy bouquet from our younger ones.
+                </p>
+                <a href="menu.html"> View Menu</a>
+            </div>
+
+        </section>
+
+
+        <h2 id="mainHomeQuote"> A Message From Mr. Donatello Jr </h2>
+
+        <section class="teamCTA">
+            <h2> ‘“If you want to become a great chef, you have to work with great chefs; and that’s exactly what we do
+                here. Our team works extraordinarily hard to ensure our guests enjoy every bite of their meal.”</h2>
+
+
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="socials">
+            <h1>Follow Us On :</h1>
+            <p>Want to stay connected on our social platforms ?</p>
+            <div class="socials-icons">
+                <a href="#"> <i class="fa fa-facebook-square" style="font-size:48px;"></i></a>
+                <a href="#"> <i class="fa fa-instagram" style="font-size:48px;"></i></a>
+                <a href="#"><i class="fa fa-twitter-square" style="font-size:48px;"></i> </a>
+            </div>
+
+
+
+
+
+        </div>
+        <div class="contact">
+            <h1> Contact Us :</h1>
+            <ul>
+                <li> <span class="contactInfoHeader"> Hours</span> : Sunday-Thursday: 11am-12am
+                    Friday/Saturday: 11am-2am and
+                    Holidays: 11am-5pm </li>
+                <li> <span class="contactInfoHeader">Location:</span> 803 Thurlow St, Vancouver BC V6E 1W1</li>
+                <li> <span class="contactInfoHeader">Email:</span> donatellos@gmail.com </li>
+                <li><span class="contactInfoHeader">Press:</span> donatellos.press@gmail.com</li>
+                <li><span class="contactInfoHeader"> Group dining:</span> donatellos.events@gmail.com</li>
+            </ul>
+        </div>
+        <div class="newsletter">
+            <h1> Join Us:</h1>
+            <input type="text" placeholder="e-mail">
+            <button> SUBSCRIBE</button>
+
+
+
+        </div>
+    </footer>
+    <script src="js/navbar_toggle.js"></script>
+
+    <script src="dist/aos.js"></script>
+    <script>
+        AOS.init({
+            easing: 'ease-in-out-sine',
+            once: true
+        });
+    </script>
+</body>
+
+</html>

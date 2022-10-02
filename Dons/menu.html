@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donatello - Menu</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/global.css">
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!-- Animation css -->
+    <link rel="stylesheet" href="dist/aos.css">
+
+</head>
+
+<body>
+    <header>
+
+        <nav class="nav-bar">
+            <!-- <span class="nav-btn nav-home"><a>MDIA 1472</a></span> -->
+            <ul id="collapseMenu" class="nav-bar-collapse">
+                <li class="nav-btn"><a href="index.html">Home</a></li>
+                <li class="nav-btn"><a href="menu.html">Menu</a></li>
+                <li class="nav-btn"><a href="about.html">About</a></li>
+                <li class="nav-btn"><a href="contact.html">Contact</a></li>
+                <li class="nav-btn"><a href="reservation.html">Reservation</a></li>
+            </ul>
+            <div class="menu-toggle" onclick="toggleMenu();">
+                <img class="toggle-btn" alt="hamburger Menu"src="./img/hamburger.svg">         
+            </div>
+        </nav>
+
+    </header>
+
+
+
+
+
+    <main id="container">
+
+        <section class="tabContent">
+            <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'Lunch')" id="defaultOpen">LUNCH</button>
+                <button class="tablinks" onclick="openCity(event, 'Dinner')">DINNER</button>
+                <button class="tablinks" onclick="openCity(event, 'Drinks')">DRINKS</button>
+                <button class="tablinks" onclick="openCity(event, 'HappyHour')">HAPPY HOUR</button>
+            </div>
+        </section>
+
+        <div class="child 1">
+            <div id="Lunch" class="tabcontent 1">
+                <h1 id="lunchMenu">Lunch</h1>
+                <h2>Available Monday - Friday only, excluding holiday</h2>
+                <h2>(v) - vegan</h2>
+
+
+
+                <div class="supercontainer">
+                    <div class="foodContainer">
+
+                        <h3>Sandwich:</h3>
+
+                        <p class="menuItemName">Panino di Verdure 20</p>
+                        <p class="menuDesc">fennel, Fried Celery Root, Sweet Potato & Chili Aioli</p>
+
+                        <p class="menuItemName">Panino Indiavolato 20</p>
+                        <p class="menuDesc">salumi Sandwich & Chili Tapenade</p>
+
+                        <p class="menuItemName">Panino di Porchetta 20</p>
+                        <p class="menuDesc">roasted Porchetta, Broccoli Rabe & Provolone on Ciabatta</p>
+
+                        <h3>Assaggini Small Bites:</h3>
+
+                        <p class="menuItemName">Olives 8</p>
+                        <p class="menuDesc">warm marinated italian olives</p>
+
+                        <p class="menuItemName">Chef’s Bruschetta (v) 13</p>
+                        <p class="menuDesc">roasted z, mascarpone, pine nuts, basil and aged balsamic</p>
+
+                        <p class="menuItemName">Squash Fritti (v) 13</p>
+                        <p class="menuDesc">fried local squash, crispy sage, Calabrian chili honey and whipped ricotta
+                        </p>
+
+                        <p class="menuItemName">San Danielle Prosciutto 20</p>
+                        <p class="menuDesc">apples, hazelnuts, parmesan and aged balsamic</p>
+
+                        <p class="menuItemName">Meatballs and Sauce 15</p>
+                        <p class="menuDesc">all heritage pork, arrabbiata and parmesan</p>
+
+                        <p class="menuItemName">Grilled Octopus 20</p>
+                        <p class="menuDesc">smoked tomato aioli, baby potatoes and spicy sausage</p>
+
+                        <h3>Insalate – Salad:</h3>
+
+                        <p class="menuItemName">Organic Greens(v) 20</p>
+                        <p class="menuDesc">shaved fennel, cucumber, radish, white wine vinegar and olive oil</p>
+
+                        <p class="menuItemName">Beet and Winter Citrus (v) 21</p>
+                        <p class="menuDesc">beetroot, toasted pistachio, citrus, olive oil and castelvetrano olives</p>
+
+                        <p class="menuItemName">Duck and Radicchio 24</p>
+                        <p class="menuDesc">agave vinaigrette, pickled grapes, frisé, pecorino, garlic crumb</p>
+
+                        <p class="menuItemName">Kale and Crispy Cauliflower (v) 21</p>
+                        <p class="menuDesc">crispy cauliflower, shaved piave, white balsamic, garlic crumb Add Chicken 8
+                        </p>
+
+
+                    </div>
+
+                    <div class="foodContainer">
+                        <h3>Neapolitan Pizza:</h3>
+
+                        <p class="menuItemName">Napoletana 22</p>
+                        <p class="menuDesc">pork, veal and beef ragu, parmesan</p>
+
+                        <p class="menuItemName">Margherita 23</p>
+                        <p class="menuDesc">Fresh mozzarella, basil, ricotta di bufala</p>
+
+                        <p class="menuItemName">Diavola 20</p>
+                        <p class="menuDesc">Hot capicola, pickled red onion, chili flakes, fior di latte, basil</p>
+
+                        <p class="menuItemName">Capricciosa 23</p>
+                        <p class="menuDesc">Fresh mozzarella, olives, mushrooms, artichokes, rosemary ham, basil</p>
+
+                        <p class="menuItemName">Burrata</p>
+                        <p class="menuDesc">Imported burrata, smoked pancetta, basil, lemon oil 23</p>
+
+                        <p class="menuItemName">Salami & Olives 20</p>
+                        <p class="menuDesc">Finocchiona salami, Sicilian olives, fresh mozzarella, basil, shaved
+                            Parmigiano
+                        </p>
+
+                        <p class="menuItemName">Prosciutto & Arugula 23</p>
+                        <p class="menuDesc">Prosciutto di Parma, arugula, fresh mozzarella, Parmigiano</p>
+
+                        <p class="menuItemName">Funghi 22</p>
+                        <p class="menuDesc">Truffled cream, fontina, sautéed mushrooms, chives</p>
+
+                        <p class="menuItemName">Potato Pizza 21</p>
+                        <p class="menuDesc">Yukon Gold potatoes, fresh mozzarella, smoked pancetta, gorgonzola, roasted
+                            garlic</p>
+
+                        <p class="menuItemName">Verdura Cotta 23</p>
+                        <p class="menuDesc">Fresh mozzarella, artichokes, marinated roasted peppers, goat cheese,
+                            pickled
+                            onions,
+                            chives</p>
+                        <h3>Pastae Pasta:</h3>
+
+                        <p class="menuItemName">Tagliatelle Bolognese 26</p>
+                        <p class="menuDesc">pork, veal and beef ragu, parmesan</p>
+
+                        <p class="menuItemName">Orecchiette 28</p>
+                        <p class="menuDesc">lamb ragu, castelvetrano olives, mint, pecorino</p>
+
+                        <p class="menuItemName">Spaghetti Cacio e Pepe (v) 20</p>
+                        <p class="menuDesc">black pepper, parmesan</p>
+
+                        <p class="menuItemName">Linguine 29</p>
+                        <p class="menuDesc">side stripe shrimps, garlic, blistered tomato, chili, bread crumb</p>
+
+                        <p class="menuItemName">Daily Risotto</p>
+                        <p class="menuDesc">ask about our chefs’ daily creation</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="child">
+
+            <div id="Dinner" class="tabcontent">
+                <h1 id="DinnerMenu">Dinner</h1>
+
+                <h2>Available Monday - Friday only, excluding holiday</h2>
+
+                <div class="supercontainer">
+
+                    <div class="foodContainer">
+
+                        <h3>Pasta:</h3>
+
+                        <p class="menuItemName">Brioscia con Granita di Mandorle 23</p>
+                        <p class="menuDesc">Sicilian Brioche with Almond Granita, Ricotta Amaretti Semifreddo & Espresso
+                        </p>
+
+                        <p class="menuItemName">Tartufo al Mascarpone 22</p>
+                        <p class="menuDesc">Mascarpone Gelato with Aged Balsamic & Puffed Wild Rice</p>
+
+                        <p class="menuItemName">Fettucini Con Funghi 22</p>
+                        <p class="menuDesc">Mushroom, garlic, thyme oil, chili flakes, lemon, parsley, Pecorino Romano
+                        </p>
+
+
+                        <p class="menuItemName">Sausage Orecchiette 23</p>
+                        <p class="menuDesc">Pugliese ear shaped semolina pasta, salsiccia fresca, mild chili, fennel,
+                            Parmigiano-Reggiano</p>
+
+                        <p class="menuItemName">Cacio e Pepeverde 22</p>
+                        <p class="menuDesc">Pecorino Romano, cracked black pepper, organic arugula</p>
+
+                        <p class="menuItemName">Tagliatelle al Ragu Bolognese 24</p>
+                        <p class="menuDesc">Braised meat sauce, pancetta, Parmigiano-Reggiano</p>
+
+                        <p class="menuItemName">Spaghetti Pomodoro & Basil 24</p>
+                        <p class="menuDesc">San Marzano tomato sauce, basil, Parmigiano-Reggiano</p>
+
+                        <p class="menuItemName">Rigatoni Carbonara 24</p>
+                        <p class="menuDesc">Guanciale, organic eggs, Pecorino Romano</p>
+
+                        <p class="menuItemName">Lasagne all'Amatriciana 20</p>
+                        <p class="menuDesc">baked pasta layers with guanciale, tomato & peperoncino</p>
+
+                        <p class="menuItemName">Feature Ravioli</p>
+                        <p class="menuDesc">Ask your server about today’s feature</p>
+                    </div>
+                    <div class="foodContainer">
+                        <h3>Vegan Dishes:</h3>
+
+                        <p class="menuItemName">Lattuga Grigliata con Finocchio e Cetriolo 23</p>
+                        <p class="menuDesc">Grilled Lettuces with Fennel & Cucumber</p>
+
+                        <p class="menuItemName">Linguine al Pesto con Noci e Limone Conservato 22</p>
+                        <p class="menuDesc">Thin Ribbon Pasta with Pesto, Walnuts & Preserved Meyer Lemon</p>
+
+                        <p class="menuItemName">Caponata di Zucca 22</p>
+                        <p class="menuDesc">Charcoal Grilled Autumn Squash with Pumpkin Seeds & Aged Balsamic Vinegar
+                        </p>
+
+
+                        <p class="menuItemName">Orecchiette con Rapini e Pomodorini Secchi 23</p>
+                        <p class="menuDesc">Little Ears with Broccoli Rabe & Sun-Dried Tomatoes</p>
+
+                        <p class="menuItemName">Arrosto di RAPA 22</p>
+                        <p class="menuDesc">Whole Roasted Turnip with Chinese Mustard</p>
+
+                        <p class="menuItemName">Funghi Selvatici 24</p>
+                        <p class="menuDesc">Charred, Foraged Wild Mushrooms with Tree Nut Ragu, Sour Apple Citronette &
+                            Sage
+                            in
+                            Flower</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="child">
+
+            <div id="Drinks" class="tabcontent">
+                <h1 id="drinksMenu">Drinks</h1>
+                <h2>Available Monday - Friday only, excluding holiday</h2>
+
+                <div class="supercontainer">
+                    <div class="foodContainer">
+                        <h3>Rossi Reds</h3>
+
+                        <p class="menuItemName">Friuli-Venezia-Giulia 20-21</p>
+                        <p class="menuItemName">Veneto 22-23</p>
+                        <p class="menuItemName">Trentino-Alto Adige 24-25</p>
+                        <p class="menuItemName">Lombardia 26</p>
+                        <p class="menuItemName">Piemonte 27-46</p>
+                        <p class="menuItemName">Barolo 27-38</p>
+                        <p class="menuItemName">Angelo Gaja 39</p>
+                        <p class="menuItemName">Barbaresco 40-43</p>
+                        <p class="menuItemName">Val d’Aosta, Liguria, Lazio, Emilia-Romagna, & Le Marche 47</p>
+                        <p class="menuItemName">Toscana 48-57</p>
+                        <p class="menuItemName">Brunello di Montalcino 48-50</p>
+                        <p class="menuItemName">Chianti 51 Super Tuscans 53-57</p>
+                        <p class="menuItemName">Umbria 58 Abruzzo & Molise 59 Campania 59-60</p>
+                        <p class="menuItemName">Puglia & Calabria 60 Basilicata & Sardegna 61</p>
+                        <p class="menuItemName">Sicilia 61-62</p>
+                    </div>
+                    <div class="foodContainer">
+                        <h3>Bianchi Whites</h3>
+
+                        <p class="menuItemName">Friuli-Venezia-Giulia 10-12</p>
+                        <p class="menuItemName">Veneto 14-15</p>
+                        <p class="menuItemName">Trentino-Alto Adige 15-16</p>
+                        <p class="menuItemName">Piemonte & Val d’Aosta 16</p>
+                        <p class="menuItemName">Liguria, Lombardia, Umbria & Toscana 17</p>
+                        <p class="menuItemName">Le Marche, Lazio & Abruzzo 18</p>
+                        <p class="menuItemName">Campania, Sardegna, & Sicilia 18-19</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="child">
+            <div id="HappyHour" class="tabcontent">
+                <h1 id="happyHourMenu">Happy Hour</h1>
+                <h2>Available Monday - Friday only, excluding holiday</h2>
+
+                <div class="supercontainer">
+                    <div class="foodContainer">
+                        <h3>Small Plates</h3>
+
+                        <p class="menuItemName">Porchetta bites 12</p>
+                        <p class="menuDesc">fennel, Fried Celery Root, Sweet Potato & Chili Aioli</p>
+
+                        <p class="menuItemName">Tenderloin tips Arrabiata 17</p>
+                        <p class="menuDesc">fennel, Fried Celery Root, Sweet Potato & Chili Aioli</p>
+
+                        <p class="menuItemName">Arostiocini (lamb & chicken) 12</p>
+                        <p class="menuDesc">fennel, Fried Celery Root, Sweet Potato & Chili Aioli</p>
+
+                        <p class="menuItemName">Bacon wrapped dates 14</p>
+                        <p class="menuDesc">fennel, Fried Celery Root, Sweet Potato & Chili Aioli</p>
+
+                        <p class="menuItemName">Arancinette 10</p>
+                        <p class="menuDesc">fennel, Fried Celery Root, Sweet Potato & Chili Aioli</p>
+
+                        <p class="menuItemName">Shrimp cocktail 20</p>
+                        <p class="menuDesc">fennel, Fried Celery Root, Sweet Potato & Chili Aioli</p>
+
+                        <p class="menuItemName">Cheese platter 23</p>
+                        <p class="menuDesc">fennel, Fried Celery Root, Sweet Potato & Chili Aioli</p>
+
+                        <h3>Red Wines</h3>
+
+                        <p class="menuItemName">Renzo Mazi, Chianti Riserva, Tuscany 12</p>
+                        <p class="menuDesc">fennel, Fried Celery Root, Sweet Potato & Chili Aioli</p>
+
+                        <p class="menuItemName">Rock and vine, cabernet, California 11</p>
+                        <p class="menuDesc">fennel, Fried Celery Root, Sweet Potato & Chili Aioli</p>
+
+                        <p class="menuItemName">Nessun Dorma, Super Tuscan 11</p>
+                        <p class="menuDesc">fennel, Fried Celery Root, Sweet Potato & Chili Aioli</p>
+                    </div>
+                    <div class="foodContainer">
+                        <h3>White Wines</h3>
+
+                        <p class="menuItemName">Dipinti Sauvignon Blanc, trentino alto adige 12</p>
+                        <p class="menuDesc">fennel, Fried Celery Root, Sweet Potato & Chili Aioli</p>
+
+                        <p class="menuItemName">Mer soleil reserve, chardonnay, califonia 12</p>
+                        <p class="menuDesc">fennel, Fried Celery Root, Sweet Potato & Chili Aioli</p>
+
+                        <p class="menuItemName">Pighin, pinot grigio, collio 11</p>
+                        <p class="menuDesc">fennel, Fried Celery Root, Sweet Potato & Chili Aioli</p>
+
+                        <h3>Seasonal Draft</h3>
+                        <p class="menuItemName">$4 off all seasonal drafts 11</p>
+                        <p class="menuDesc">fennel, Fried Celery Root, Sweet Potato & Chili Aioli</p>
+
+                        <h3>Seasonal Cocktails</h3>
+                        <p class="menuItemName">$5 off all seasonal craft cocktails 11</p>
+                        <p class="menuDesc">fennel, Fried Celery Root, Sweet Potato & Chili Aioli</p>
+
+                        <h3>On Tap at the Bar</h3>
+                        <p class="menuItemName">$5 off all bar display cocktails 11</p>
+                        <p class="menuDesc">fennel, Fried Celery Root, Sweet Potato & Chili Aioli</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- closed container -->
+    </main>
+
+
+    <footer>
+        <div class="socials">
+            <h1>Follow Us On :</h1>
+            <div class="socials-icons">
+                <a href="#"> <i class="fa fa-facebook-square" style="font-size:48px;"></i></a>
+                <a href="#"> <i class="fa fa-instagram" style="font-size:48px;"></i></a>
+                <a href="#"><i class="fa fa-twitter-square" style="font-size:48px;"></i> </a>
+            </div>
+
+
+        </div>
+        <div class="contact">
+            <h1> Contact Us :</h1>
+            <ul>
+                <li> <span class="contactInfoHeader"> Hours</span> : Sunday-Thursday: 11am-12am
+                    Friday/Saturday: 11am-2am and
+                    Holidays: 11am-5pm </li>
+                <li> <span class="contactInfoHeader">Location:</span> 803 Thurlow St, Vancouver BC V6E 1W1</li>
+                <li> <span class="contactInfoHeader">Email:</span> donatellos@gmail.com </li>
+                <li><span class="contactInfoHeader">Press:</span> donatellos.press@gmail.com</li>
+                <li><span class="contactInfoHeader"> Group dining:</span> donatellos.events@gmail.com</li>
+            </ul>
+        </div>
+        <div class="newsletter">
+            <h1> Join Us:</h1>
+            <input type="text" placeholder="e-mail">
+            <button> SUBSCRIBE</button>
+
+
+
+        </div>
+    </footer>
+    <script src="js/navbar_toggle.js"></script>
+
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+</body>
+
+</html>

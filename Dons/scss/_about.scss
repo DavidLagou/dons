@@ -1,0 +1,41 @@
+.bigcontainer {
+    margin: 10px auto;
+    width: 700px;
+    // position: relative;
+}
+
+.photoshop {
+    position: relative;
+    height: 476px;
+    img {
+        width: 700px;
+        height: 476px;
+    }
+}
+
+.photoshop > * {
+    position: absolute;
+}
+
+.corrected {
+    /* this property will not only be set dynamically with Javrascript, but activily  modify based on mouse movements. */
+    overflow: hidden;
+}
+.info {
+    position: relative;
+    h2 {
+        padding-top: 30px;
+        text-align: center;
+        font-size: 30px;
+        color: $companyPink;
+
+        font-family: "Open Sans", sans-serif;
+    }
+}
+
+
+@media screen and (max-width: 650px) {
+   
+
+    
+}

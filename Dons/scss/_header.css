@@ -1,0 +1,12 @@
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 10px; }
+
+.nav-bar li, a {
+  list-style-type: none;
+  text-decoration: none;
+  padding: 10px; }
+
+/*# sourceMappingURL=_header.css.map */
